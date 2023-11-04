@@ -59,7 +59,7 @@ class Recommender:
 
     def create_ui(self):
         """
-        Create the user interface for the application.
+        Create the user interface for the application. Create our buttons for our generat playlist, spotify, and soundcloud
 
         """
         title_font = ("Helvetica", 16, "bold")
