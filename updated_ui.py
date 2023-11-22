@@ -1,6 +1,7 @@
 import tkinter as tk
 from tkinter import ttk
 from PIL import Image, ImageTk
+from spotipy.oauth2 import SpotifyOAuth
 import webbrowser
 # Custom styling for the buttons
 BUTTON_STYLE = {
