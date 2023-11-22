@@ -1,7 +1,6 @@
 import tkinter as tk
 from tkinter import ttk
 from PIL import Image, ImageTk
-from spotipy.oauth2 import SpotifyOAuth
 import webbrowser
 # Custom styling for the buttons
 BUTTON_STYLE = {
@@ -101,16 +100,6 @@ class Recommender:
 
     def open_soundcloud(self):
         webbrowser.open('https://soundcloud.com/signin')
-
-    def login_spotify(self):
-        sp_oauth = SpotifyOAuth(
-            '05df772d434d44e4bcdbd360a7b2b34f',
-            'd97d683e553a4c948b9104a598676ad3',
-            'http://localhost:8888/callback'
-        )
-        auth_url = sp_oauth.get_authorize_url()
-        import webbrowser
-        webbrowser.open(auth_url)
 
     def style_buttons(self):
         """
