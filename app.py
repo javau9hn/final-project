@@ -6,13 +6,14 @@ from flask import Flask, url_for, session, request, redirect
 import json
 import time
 import pandas as pd
+import requests
 
 
 
 # App config
 app = Flask(__name__)
 
-app.secret_key = '948fedf1fc4f4c1aa9d8847df9fcc641'
+app.secret_key = 'esfks'
 app.config['SESSION_COOKIE_NAME'] = 'spotify-login-session'
 
 @app.route('/')
@@ -49,20 +50,29 @@ def get_all_tracks():
     if not authorized:
         return redirect('/')
     sp = spotipy.Spotify(auth=session.get('token_info').get('access_token'))
-    results = []
+    songNames = []
+    songGenres = []
     iter = 0
     while True:
         offset = iter * 50
         iter += 1
         curGroup = sp.current_user_saved_tracks(limit=50, offset=offset)['items']
         for idx, item in enumerate(curGroup):
+        
             track = item['track']
-            val = track['name'] + " - " + track['artists'][0]['name']
-            results += [val]
+            songVal = track['name'] + " - " + track['artists'][0]['name']
+            artistID = track['album']['artists'][0]['id']
+            artist_info = sp.artist(artistID)['genres']
+
+            songNames += [songVal]
+            songGenres += [artist_info]
         if (len(curGroup) < 50):
             break
     
-    df = pd.DataFrame(results, columns=["song names"]) 
+    print(artist_info)
+
+
+    df = pd.DataFrame({'song names': songNames, 'song genre': songGenres})
     df.to_csv('songs.csv', index=False)
     return "done"
 
@@ -97,6 +107,8 @@ def create_spotify_oauth():
             redirect_uri=url_for('authorizePage', _external=True),
             scope="user-library-read")
 
+
+    
 
 if __name__ == '__main__':
     app.run(debug=True, port=8080)
