@@ -46,7 +46,7 @@ class TestSpotifyDownloaderApp(unittest.TestCase):
         self.assertTrue(button1.image is not None)
 
         # Use 'mnotes.jpeg' for the second button
-        button2 = app.create_button(parent, "mnotes.jpeg", lambda: None, "MNotes Button")
+        button2 = app.create_button(parent, "mnotes.jpeg", lambda: None, "playlist Button")
         self.assertTrue(button2.image is not None)
 
     # Add more test cases as needed for other aspects of the class
