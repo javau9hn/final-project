@@ -1,6 +1,10 @@
 import tkinter as tk
 from tkinter import ttk
 from PIL import Image, ImageTk
+import webbrowser
+import subprocess
+import sys
+
 
 # Custom styling for the buttons
 BUTTON_STYLE = {
@@ -18,6 +22,7 @@ COLORS = {
     'button_hover': '#7986CB'
 }
 
+
 class Recommender:
     """
     This class represents a Soundcloud and Spotify Recommender application.
@@ -29,6 +34,7 @@ class Recommender:
         style_buttons(): Apply custom styling to buttons.
 
     """
+
     def __init__(self, root):
         """
         Initialize the Recommender class.
@@ -43,6 +49,28 @@ class Recommender:
         self.root.configure(bg=COLORS['background'])
         self.create_ui()
 
+
+    def run_logic_py(self):
+        try:
+            # Run logic.py and wait for it to complete
+            subprocess.run([sys.executable, "logic.py"], check=True)
+
+
+        except subprocess.CalledProcessError as e:
+            print(f"An error occurred while running logic.py: {e}")
+        except Exception as e:
+            print(f"Unexpected error: {e}")
+
+    def run_app_py(self):
+        try:
+            # Run app.py and wait for it to complete
+            subprocess.run([sys.executable, "app.py"], check=True)
+
+
+        except subprocess.CalledProcessError as e:
+            print(f"An error occurred while running app.py: {e}")
+        except Exception as e:
+            print(f"Unexpected error: {e}")
     def create_button(self, parent, text, image, command=None):
         """
         Create a styled button with text, image, and an optional command.
@@ -52,8 +80,9 @@ class Recommender:
             text (str): The text to display on the button.
             image: The image to display on the button.
             command: The function to be called when the button is clicked.     """
-        
-        button = ttk.Button(parent, text=text, image=image, compound='top', style='TButton', command=command)
+
+        button = ttk.Button(parent, text=text, image=image,
+                            compound='top', command=command)
         button.image = image
         return button
 
@@ -74,20 +103,29 @@ class Recommender:
 
         playlist_icon = music_icons.playlist_icon()
 
-        playlist_button = self.create_button(button_frame, "Generate Playlist", playlist_icon, )
-        playlist_button.pack(side="right", padx=10, pady=10)
+
 
         spotify_icon = music_icons.spotify_icon()
 
-        spotify_button = self.create_button(button_frame, "Login to Spotify", spotify_icon)
+
+        spotify_button = self.create_button(
+            button_frame, "Login to Spotify", spotify_icon, command=self.run_app_py)
         spotify_button.pack(side="left", padx=10, pady=10)
 
-        soundcloud_icon = music_icons.soundcloud_icon()
+        playlist_button = self.create_button(
+            button_frame, "Generate Playlist", playlist_icon, command=self.run_logic_py)
+        playlist_button.pack(side="right", padx=10, pady=10)
 
-        soundcloud_button = self.create_button(button_frame, "Login to SoundCloud", soundcloud_icon)
-        soundcloud_button.pack(side="right", padx=10, pady=10)
+
+
 
         self.style_buttons()
+
+    def open_spotify(self):
+        webbrowser.open('https://accounts.spotify.com/en/login')
+
+    def open_soundcloud(self):
+        webbrowser.open('https://soundcloud.com/signin')
 
     def style_buttons(self):
         """
@@ -100,6 +138,7 @@ class Recommender:
                   background=[('active', COLORS['button_hover'])],
                   foreground=[('active', COLORS['button_foreground'])])
 
+
 class MusicIcons:
     """
     This class provides methods to load and create image icons for each button.
@@ -111,8 +150,6 @@ class MusicIcons:
         playlist_icon(): returns playlist icon
 
     """
-    def __init__(self):
-        pass
 
     def load_image(self, image_name, size=(55, 55)):
         """
@@ -123,10 +160,12 @@ class MusicIcons:
             size (tuple): The desired size for the image."""
         try:
             image = Image.open(image_name)
-            image = image.resize(size, Image.Resampling.LANCZOS)  # Use LANCZOS for antialiasing
+            # Use LANCZOS for antialiasing
+            image = image.resize(size, Image.Resampling.LANCZOS)
             return ImageTk.PhotoImage(image)
         except FileNotFoundError:
-            print(f"Error: The image '{image_name}' was not found. Please check the file's existence and path.")
+            print(
+                f"Error: The image '{image_name}' was not found. Please check the file's existence and path.")
             return None
 
     def spotify_icon(self):
@@ -159,6 +198,7 @@ class MusicIcons:
         """
         return self.load_image("mnotes.jpeg")
 
+
 def main():
     """
     Entry point of the application. Creates the root window and starts the Recommender.
@@ -167,6 +207,7 @@ def main():
     root = tk.Tk()
     app = Recommender(root)
     root.mainloop()
+
 
 if __name__ == "__main__":
     main()
