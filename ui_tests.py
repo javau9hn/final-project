@@ -41,11 +41,11 @@ class TestUI(unittest.TestCase):
         app = SpotifyDownloaderApp(self.root)
         parent = tk.Frame(self.root)
 
-        # Use 'spotify_icon' for the first button
+        # Use 'spotify' for the first button
         button1 = app.create_button(parent, "spotify_icon.png", app.run_logic_py, "Spotify Button")
         self.assertTrue(button1.image is not None)
 
-        # Use 'mnotes' for the second button
+        # Use 'playlist' for the second button
         button2 = app.create_button(parent, "mnotes.jpeg", app.run_app_py, "spotify Button")
         self.assertTrue(button2.image is not None)
 
