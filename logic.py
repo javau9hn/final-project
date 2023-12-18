@@ -1,58 +1,93 @@
 import csv
 import random
 
-# Load CSV file
-file_path = 'songs.csv'  
-
-# Function to load data from CSV
 def load_data(file_path):
+    """Loads data from a CSV file.
+
+    Args:
+        file_path (str): The path to the CSV file.
+
+    Returns:
+        list: List of data from the CSV file.
+
+    Driver: Mitch
+    Navagator: Tommy
+    """
     data = []
     with open(file_path, newline='', encoding='utf-8') as csvfile:
         reader = csv.reader(csvfile)
-        next(reader)  # Skip header
+        next(reader)  
         for row in reader:
             data.append(row)
     return data
 
-# Function to filter songs by genre
 def get_songs_by_genre(songs, selected_genre):
+    """Filters songs by a selected genre.
+
+    Args:
+        songs (list): List of songs data.
+        selected_genre (str): The selected genre to filter by.
+
+    Returns:
+        list: Filtered songs by the selected genre.
+
+    Driver: Tommy
+    Navagator: Mitch
+    """
     filtered_songs = []
     for song in songs:
         if selected_genre in eval(song[1]):
             filtered_songs.append(song[0])
     return filtered_songs
 
-# Load data from CSV
-songs_data = load_data(file_path)
+def list_to_csv(data_list):
+    """Writes a list to a CSV file.
 
-# Initialize variables
-playlist = []
-min_songs = 5
+    Args:
+        data_list (list): The list to be written to the CSV file.
 
-while len(playlist) < min_songs:
-    # Select a random song
-    random_song = random.choice(songs_data)
-    random_genres = eval(random_song[1])
+    Returns:
+        str: Message indicating success or failure.
+    
+    
+    Driver: Tommy
+    Navagator: Mitch
+    """
+    filename='NewPlaylist.csv'
+    try:
+        with open(filename, 'w', newline='') as file:
+            writer = csv.writer(file)
+            writer.writerows(data_list)
+        return f"Playlist: '{filename}' created successfully!"
+    except Exception as e:
+        return f"Failed to create CSV file: {str(e)}"
 
-    # Select a random genre from the random song
-    selected_genre = random.choice(random_genres)
+def main():
+    
+    file_path = 'songs.csv'  
+    songs_data = load_data(file_path)
+    playlist = []
+    min_songs = 5
 
-    # Get songs that share the selected genre
-    playlist = get_songs_by_genre(songs_data, selected_genre)
+    while len(playlist) < min_songs:
+        random_song = random.choice(songs_data)
+        random_genres = eval(random_song[1])
 
-    # Remove the randomly selected song from the playlist
-    if random_song[0] in playlist:
-        playlist.remove(random_song[0])
+        selected_genre = random.choice(random_genres)
 
-    # Check if there are enough songs with the selected genre
+        playlist = get_songs_by_genre(songs_data, selected_genre)
+
+        if random_song[0] in playlist:
+            playlist.remove(random_song[0])
+
+        if len(playlist) >= min_songs:
+            playlist = random.sample(playlist, min_songs)
+            break
+
     if len(playlist) >= min_songs:
-        playlist = random.sample(playlist, min_songs)
-        break
+        list_to_csv(playlist)
+    else:
+        print(f"Not enough songs with the selected genre after trying multiple genres.")
 
-# Display the playlist
-if len(playlist) >= min_songs:
-    print("Generated Playlist:")
-    for index, song in enumerate(playlist, start=1):
-        print(f"{index}. {song}")
-else:
-    print(f"Not enough songs with the selected genre after trying multiple genres.")
+if __name__ == '__main__':
+    main()

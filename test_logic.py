@@ -1,63 +1,74 @@
-import random
 import unittest
-from unittest.mock import patch
-import logic  
-import ast  
+import os
+from tempfile import NamedTemporaryFile
+from logic import load_data, list_to_csv
 
-class TestSpotifyPlaylistGenerator(unittest.TestCase):
+class TestLoadData(unittest.TestCase):
+
+    def setUp(self):
+        """Set up the test environment.
+            Driver: Tommy
+            Navigator: Javaughn
+        """
+        self.test_data = [
+            ["Song1", "['Rock', 'Pop']"],
+            ["Song2", "['Pop', 'R&B']"],
+            ["Song3", "['Hip Hop', 'Rap']"],
+        ]
+        self.temp_file = NamedTemporaryFile(mode='w', delete=False, newline='', encoding='utf-8')
+        self.temp_file_name = self.temp_file.name
+        self.temp_file.write("Title,Genres\n")
+        for song in self.test_data:
+            self.temp_file.write(f"{song[0]},{song[1]}\n")
+        self.temp_file.close()
+
+    def tearDown(self):
+        """Tear down the test environment.
+            Driver: Tommy
+            Navigator: Javaughn
+        """
+        os.unlink(self.temp_file_name)
 
     def test_load_data(self):
+        """Test the load_data function.
+            Driver: Tommy
+            Navigator: Javaughn
+            """
+        loaded_data = load_data(self.temp_file_name)
+        self.assertEqual(len(loaded_data), len(self.test_data))
+        self.assertEqual(loaded_data, self.test_data)
 
-        test_data = [["Song1", "['Pop', 'Rock']"], ["Song2", "['Jazz']"]]
-        with patch('builtins.open', unittest.mock.mock_open(read_data="Name,Genres\nSong1,['Pop', 'Rock']\nSong2,['Jazz']")):
-            data = logic.load_data("dummy_path.csv")
-            formatted_data = [[row[0], str(ast.literal_eval(row[1]))] for row in data]
-            self.assertEqual(formatted_data, test_data)
+class TestListToCSV(unittest.TestCase):
+    
 
-    def test_get_songs_by_genre(self):
-        test_songs = [["Song1", "['Pop', 'Rock']"], ["Song2", "['Jazz']"]]
-        expected_songs = ["Song1"]
-        filtered_songs = logic.get_songs_by_genre(test_songs, 'Pop')
-        self.assertEqual(filtered_songs, expected_songs)
+    def test_list_to_csv_success(self):
+        """Test list_to_csv function on successful CSV creation.
+            Driver: Tommy
+            Navigator: Javaughn
+        """
+        test_data = [
+            ["Song1", "Rock"],
+            ["Song2", "Pop"],
+            ["Song3", "Hip Hop"],
+        ]
+        temp_file_name = 'test_playlist.csv'
+        result = list_to_csv(test_data, filename=temp_file_name)
+        self.assertEqual(result, f"Playlist: '{temp_file_name}' created successfully!")
+        os.unlink(temp_file_name)
 
-    @patch('random.choice')
-    @patch('random.shuffle')
-    def test_playlist_generation_conditions(self, mock_shuffle, mock_choice):
-        test_songs = [["Song1", "['Pop', 'Rock']"], ["Song2", "['Jazz', 'Blues']"], ["Song3", "[]"]]
-        def choice_side_effect(seq):
-            if seq:
-                return seq[0]
-            raise StopIteration
-        mock_choice.side_effect = choice_side_effect
-        mock_shuffle.side_effect = lambda x: x.reverse()  
-
-        logic.songs_data = test_songs.copy()
-        logic.playlist = []
-        logic.min_songs = 1
-        while len(logic.playlist) < logic.min_songs:
-            if not logic.songs_data:
-                break
-
-            logic.songs_data.append(logic.songs_data.pop(0))  
-
-            try:
-                random_genres = ast.literal_eval(logic.songs_data[-1][1])
-            except (ValueError, SyntaxError):
-                continue
-
-            if not random_genres:
-                continue
-
-            selected_genre = mock_choice(random_genres)
-            logic.playlist.extend(song for song in logic.get_songs_by_genre(logic.songs_data, selected_genre) 
-                                  if song != logic.songs_data[-1][0] and song not in logic.playlist)
-
-            if len(logic.playlist) >= logic.min_songs:
-                random.shuffle(logic.playlist)
-                logic.playlist = logic.playlist[:logic.min_songs]
-                break
-
-        self.assertTrue(len(logic.playlist) >= logic.min_songs)
+    def test_list_to_csv_failure(self):
+        """Test list_to_csv function on failure during CSV creation.
+            Driver: Tommy
+            Navigator: Javaughn
+        """
+        test_data = [
+            ["Song1", "Rock"],
+            ["Song2", "Pop"],
+            ["Song3", "Hip Hop"],
+        ]
+        temp_file_name = 'non_existent_folder/test_playlist.csv'
+        result = list_to_csv(test_data, filename=temp_file_name)
+        self.assertTrue(result.startswith("Failed to create CSV file"))
 
 if __name__ == '__main__':
     unittest.main()
