@@ -13,7 +13,7 @@ class TestSpotifyDownloaderApp(unittest.TestCase):
         self.root = tk.Tk()
 
     def tearDown(self):
-        """after each test case, destory the environment"""
+        """after each test case, destroy the environment"""
         self.root.destroy()
 
     @patch('subprocess.run')
