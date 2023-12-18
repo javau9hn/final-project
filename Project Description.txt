@@ -1,0 +1,10 @@
+﻿This project uses OAuth2 and spotipy to download a users data using spotify’s API. Run ui.py to start the program. A popup will open with two buttons. First click the spotify button which will use a flask server and OAuth2 to connect the user with spotify API where they can download (.csv) all of their liked songs in their library. Then the user should click the music button which will produce a 10 song playlist of a random genre of their music and download in as a csv file. 
+
+
+
+
+
+
+Sources:
+https://developer.spotify.com/documentation/web-api/reference/
+https://spotipy.readthedocs.io/en/2.22.1/
