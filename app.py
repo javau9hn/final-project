@@ -69,7 +69,6 @@ def get_all_tracks():
         if (len(curGroup) < 50):
             break
     
-    print(artist_info)
 
 
     df = pd.DataFrame({'song names': songNames, 'song genre': songGenres})
