@@ -124,9 +124,6 @@ class Recommender:
     def open_spotify(self):
         webbrowser.open('https://accounts.spotify.com/en/login')
 
-    def open_soundcloud(self):
-        webbrowser.open('https://soundcloud.com/signin')
-
     def style_buttons(self):
         """
         Apply custom styling to the buttons.
@@ -177,17 +174,7 @@ class MusicIcons:
 
         """
         return self.load_image("spotify_icon.png")
-
-    def soundcloud_icon(self):
-        """
-        Load and return the SoundCloud icon image.
-
-        Returns:
-            Soundcloud icon or none
-
-        """
-        return self.load_image("Soundcloud-icon.png")
-
+    
     def playlist_icon(self):
         """
         Load and return the playlist icon image.
