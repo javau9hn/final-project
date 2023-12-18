@@ -1,5 +1,6 @@
 import csv
 import random
+import pandas as pd
 
 def load_data(file_path):
     """Loads data from a CSV file.
@@ -48,17 +49,12 @@ def list_to_csv(data_list):
 
     Returns:
         str: Message indicating success or failure.
-    
-    
-    Driver: Tommy
-    Navagator: Mitch
     """
-    filename='NewPlaylist.csv'
+    filename = 'NewPlaylist.csv'
     try:
-        with open(filename, 'w', newline='') as file:
-            writer = csv.writer(file)
-            writer.writerows(data_list)
-        return f"Playlist: '{filename}' created successfully!"
+        df = pd.DataFrame(data_list)
+        df.to_csv(filename, index=False)
+        return f"CSV file '{filename}' created successfully!"
     except Exception as e:
         return f"Failed to create CSV file: {str(e)}"
 
@@ -74,6 +70,9 @@ def main():
         random_genres = eval(random_song[1])
 
         selected_genre = random.choice(random_genres)
+
+        while (selected_genre == None):
+            selected_genre = random.choice(random_genres)
 
         playlist = get_songs_by_genre(songs_data, selected_genre)
 
