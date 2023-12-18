@@ -1,4 +1,338 @@
 song names,song genre
+Eventually - Tame Impala,"['australian psych', 'modern rock', 'neo-psychedelic', 'rock']"
+LARP (feat. Gorillaz) - Uriel Bromberg,[]
+hooligan - Baby Keem,"['hip hop', 'rap']"
+"Memphis, Pt. 2 - AG Club",['indie hip hop']
+Nun id change - Yeat,"['pluggnb', 'rage rap']"
+TELEKINESIS (feat. SZA & Future) - Travis Scott,"['hip hop', 'rap', 'slap house']"
+RIOT (Rowdy Pipe'n) - A$AP Rocky,"['east coast hip hop', 'hip hop', 'rap', 'trap']"
+Nobody's Perfect - J. Cole,"['conscious hip hop', 'hip hop', 'north carolina hip hop', 'rap']"
+No Complaints (feat. Offset & Drake) (Bonus) - Metro Boomin,['rap']
+"One Mic, One Gun - Nas","['conscious hip hop', 'east coast hip hop', 'gangster rap', 'hardcore hip hop', 'hip hop', 'queens hip hop', 'rap']"
+Arya (with Nigo) - A$AP Rocky,[]
+My wrist (with Young Thug) - Yeat,"['pluggnb', 'rage rap']"
+Legacy (feat. Travis Scott & 21 Savage) - Offset,"['atl hip hop', 'hip hop', 'pop rap', 'rap', 'trap']"
+Pure Cocaine - Lil Baby,"['atl hip hop', 'atl trap', 'rap', 'trap']"
+Another Day - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+Umbrella (with 21 Savage & Young Nudy) - Metro Boomin,['rap']
+Bend Ya (feat. Frank Ocean & Kendrick Lamar) - Mann,[]
+durag activity (with Travis Scott) - Baby Keem,"['hip hop', 'rap']"
+Bank dont close - michiganmadex2,[]
+On BS - Drake,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']"
+HYAENA - Travis Scott,"['hip hop', 'rap', 'slap house']"
+Diet Coke - Pusha T,"['gangster rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap', 'virginia hip hop']"
+You Wish (with Missy Elliott & Kaliii) – Remix - Flyana Boss,['trap queen']
+Flooded The Face - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+Int'l Players Anthem (I Choose You) (feat. Outkast) - UGK,['dirty south rap']
+Bad Ass Jit - Dee Watkins,"['florida drill', 'florida rap']"
+For the First Time - Mac DeMarco,"['edmonton indie', 'lo-fi indie', 'pov: indie']"
+These Walls - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Pure Souls - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Brenda's Got A Baby - 2Pac,"['g funk', 'gangster rap', 'hip hop', 'rap', 'west coast rap']"
+"A$AP Forever REMIX (feat. Moby, T.I. & Kid Cudi) - A$AP Rocky","['east coast hip hop', 'hip hop', 'rap', 'trap']"
+November Has Come - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+Pluto to Mars - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+Greatness - Quavo,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+Ghostface Killers (feat. Travis Scott) - 21 Savage,"['atl hip hop', 'hip hop', 'rap']"
+Daddy's Birthday - Young Thug,"['atl hip hop', 'atl trap', 'gangster rap', 'melodic rap', 'rap', 'trap']"
+Ms. Fat Booty - Mos Def,"['conscious hip hop', 'east coast hip hop', 'hip hop']"
+93 'Til Infinity - Souls Of Mischief,"['alternative hip hop', 'hardcore hip hop', 'hip hop', 'jazz rap']"
+Overdue (with Travis Scott) - Metro Boomin,['rap']
+AIN'T GON STOP ME - reggie,"['chill abstract hip hop', 'indie hip hop', 'indie r&b']"
+Savage - 21 Lil Harold,['atl trap']
+ILoveUIHateU - Playboi Carti,"['atl hip hop', 'plugg', 'pluggnb', 'rage rap', 'rap']"
+Praise The Lord (Da Shine) (feat. Skepta) - A$AP Rocky,"['east coast hip hop', 'hip hop', 'rap', 'trap']"
+HATE YOU - HEALTH,"['grave wave', 'metropopolis', 'noise pop', 'noise rock']"
+Coming Back (feat. Mac Miller) - Domo Genesis,"['alternative hip hop', 'underground hip hop']"
+1539 N. Calvert - JPEGMAFIA,"['alternative hip hop', 'experimental hip hop', 'industrial hip hop', 'underground hip hop']"
+Doo Wop (That Thing) - Ms. Lauryn Hill,"['alternative r&b', 'conscious hip hop', 'hip hop', 'neo soul', 'new jersey rap', 'r&b', 'soul']"
+Neighbors - J. Cole,"['conscious hip hop', 'hip hop', 'north carolina hip hop', 'rap']"
+16 - Baby Keem,"['hip hop', 'rap']"
+Let You Go - A$AP Ferg,"['hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']"
+Feel No Ways - Drake,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']"
+Electric Relaxation - A Tribe Called Quest,"['conscious hip hop', 'east coast hip hop', 'golden age hip hop', 'hip hop', 'jazz rap', 'queens hip hop']"
+It Was A Good Day - Ice Cube,"['conscious hip hop', 'g funk', 'gangster rap', 'hip hop', 'rap', 'west coast rap']"
+RoboCop - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Choppa Won't Miss (feat. Young Thug) - Playboi Carti,"['atl hip hop', 'plugg', 'pluggnb', 'rage rap', 'rap']"
+Feels Like We Only Go Backwards - Tame Impala,"['australian psych', 'modern rock', 'neo-psychedelic', 'rock']"
+Stayed Together - XBlvck,[]
+Wouldn't Get Far - The Game,"['detroit hip hop', 'gangster rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']"
+Bless Em (Takeoff feat. Travis Scott) - Quality Control,"['melodic rap', 'trap']"
+"Walk On Water (feat. A$AP Twelvyy, A$AP Ant, A$AP Nast, A$AP Ferg & Playboi Carti) - A$AP Mob","['hip hop', 'rap', 'southern hip hop', 'trap']"
+War Ready - DaDa1k,"['alabama rap', 'florida rap']"
+Champagne Shots - Sainté,['chill drill']
+"Am I Dreaming (Metro Boomin & A$AP Rocky, Roisee) - Metro Boomin",['rap']
+Down In Atlanta - Pharrell Williams,"['dance pop', 'pop']"
+Out My Way - LUCKI,['plugg']
+Sanguine Paradise - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+Endless Fashion (feat. Nicki Minaj) - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+PYROMANIAC - THE STAR CLUB,"['j-punk', 'japanese punk rock']"
+Magnolia - Playboi Carti,"['atl hip hop', 'plugg', 'pluggnb', 'rage rap', 'rap']"
+B.Q.E - Kota the Friend,['underground hip hop']
+Wishing For A Hero (feat. BJ The Chicago Kid) - Polo G,"['chicago rap', 'rap']"
+Maytag (Tax Free) - Ben Reilly,[]
+"12.38 (feat. 21 Savage, Ink & Kadhja Bonet) - Childish Gambino","['atl hip hop', 'hip hop', 'rap']"
+bread & butter - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+ca$h $hit - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+fukumean - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+"Home (Metro Boomin & Don Toliver, Lil Uzi Vert) - Metro Boomin",['rap']
+m y . l i f e (with 21 Savage & Morray) - J. Cole,"['conscious hip hop', 'hip hop', 'north carolina hip hop', 'rap']"
+Free Twuan - JBFlyBoi,[]
+4loko - Prison Mike,[]
+Suicide Kid - JayO Sama,['florida rap']
+Bomb Thrown - CZARFACE,['alternative hip hop']
+Impala - Young Nudy,"['pluggnb', 'rap', 'trap']"
+Transportin' - Kodak Black,"['florida drill', 'florida rap', 'melodic rap', 'miami hip hop', 'rap', 'trap', 'trap latino']"
+Nights - Frank Ocean,"['lgbtq+ hip hop', 'neo soul']"
+Headshots (4r da Locals) - Isaiah Rashad,"['hip hop', 'rap', 'tennessee hip hop', 'underground hip hop']"
+Kevin’s Heart - J. Cole,"['conscious hip hop', 'hip hop', 'north carolina hip hop', 'rap']"
+Rich Nigga Shit (feat. Young Thug) - 21 Savage,"['atl hip hop', 'hip hop', 'rap']"
+Survival Tactics - Joey Bada$$,"['conscious hip hop', 'hip hop', 'rap']"
+King Kunta - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+RIP Young - Isaiah Rashad,"['hip hop', 'rap', 'tennessee hip hop', 'underground hip hop']"
+Flashing Lights - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Eazy (Feat. Kanye West) - The Game,"['detroit hip hop', 'gangster rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']"
+4:44 - JAY-Z,"['east coast hip hop', 'gangster rap', 'hip hop', 'pop rap', 'rap']"
+Swimming Pools (Drank) - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Surround Sound (feat. 21 Savage & Baby Tate) - JID,"['hip hop', 'pop rap', 'rap', 'underground hip hop']"
+Superpower (feat. Frank Ocean) - Beyoncé,"['pop', 'r&b']"
+Super Rich Kids - Frank Ocean,"['lgbtq+ hip hop', 'neo soul']"
+I Say a Little Prayer - Aretha Franklin,"['classic soul', 'jazz blues', 'memphis soul', 'neo soul', 'soul', 'southern soul', 'vocal jazz']"
+Hood Gone Love It (feat. Kendrick Lamar) - Jay Rock,"['conscious hip hop', 'hip hop', 'rap', 'southern hip hop', 'trap']"
+Wat's Wrong (feat. Zacari & Kendrick Lamar) - Isaiah Rashad,"['hip hop', 'rap', 'tennessee hip hop', 'underground hip hop']"
+BLACK BALLOONS | 13LACK 13ALLOONZ [FEAT. TWELVE'LEN & GOLDLINK | TWELVE'LEN + GOLDL1NK] - Denzel Curry,"['dark trap', 'drill', 'hip hop', 'miami hip hop', 'pop rap', 'rap', 'trap', 'underground hip hop']"
+"Potato Salad - Tyler, The Creator","['hip hop', 'rap']"
+90210 (feat. Kacy Hill) - Travis Scott,"['hip hop', 'rap', 'slap house']"
+Location - Playboi Carti,"['atl hip hop', 'plugg', 'pluggnb', 'rage rap', 'rap']"
+4th Dimension - KIDS SEE GHOSTS,['rap']
+Private Landing (feat. Justin Bieber & Future) - Don Toliver,"['pop rap', 'rap', 'trap']"
+Jamming - Bob Marley & The Wailers,"['reggae', 'roots reggae']"
+Know You Miss Me - Chasinbens,[]
+"Come On, Let's Go (with Nigo) - Tyler, The Creator",[]
+My Kind of Woman - Mac DeMarco,"['edmonton indie', 'lo-fi indie', 'pov: indie']"
+Heart To Heart - Mac DeMarco,"['edmonton indie', 'lo-fi indie', 'pov: indie']"
+Chamber Of Reflection - Mac DeMarco,"['edmonton indie', 'lo-fi indie', 'pov: indie']"
+Freaking Out the Neighborhood - Mac DeMarco,"['edmonton indie', 'lo-fi indie', 'pov: indie']"
+HONEST - Baby Keem,"['hip hop', 'rap']"
+Runaway - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+The Question (feat. Lil Wayne) - Mac Miller,"['hip hop', 'pittsburgh rap', 'pop rap', 'rap']"
+DEVASTATED - Joey Bada$$,"['conscious hip hop', 'hip hop', 'rap']"
+Alright - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Keep It On - Mase,"['contemporary r&b', 'gangster rap', 'hardcore hip hop', 'harlem hip hop', 'hip hop', 'hip pop', 'r&b', 'southern hip hop', 'urban contemporary']"
+Welcome Back - Mase,"['contemporary r&b', 'gangster rap', 'hardcore hip hop', 'harlem hip hop', 'hip hop', 'hip pop', 'r&b', 'southern hip hop', 'urban contemporary']"
+Player's Anthem - Junior M.A.F.I.A.,"['dirty south rap', 'east coast hip hop']"
+All I Ever Wanted - Mase,"['contemporary r&b', 'gangster rap', 'hardcore hip hop', 'harlem hip hop', 'hip hop', 'hip pop', 'r&b', 'southern hip hop', 'urban contemporary']"
+Nappy Heads - Fugees,"['east coast hip hop', 'hip hop', 'neo soul', 'new jersey rap']"
+Fu-Gee-La (feat. John Forté) - Refugee Camp Remix - Fugees,"['east coast hip hop', 'hip hop', 'neo soul', 'new jersey rap']"
+Killing Me Softly With His Song - Fugees,"['east coast hip hop', 'hip hop', 'neo soul', 'new jersey rap']"
+I Wonder - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Revenge - XXXTENTACION,"['emo rap', 'miami hip hop', 'rap']"
+Zealots - Fugees,"['east coast hip hop', 'hip hop', 'neo soul', 'new jersey rap']"
+Novacane - Frank Ocean,"['lgbtq+ hip hop', 'neo soul']"
+"No Woman, No Cry - Fugees","['east coast hip hop', 'hip hop', 'neo soul', 'new jersey rap']"
+Dangerous (feat. Kid Cudi) - ScHoolboy Q,"['gangster rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']"
+Follow God - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Hate It Or Love It - The Game,"['detroit hip hop', 'gangster rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']"
+Texas Cyclone - Sauce Walka,"['houston rap', 'memphis hip hop', 'trap']"
+Ms. Evans 1 - Tee Grizzley,"['detroit hip hop', 'detroit trap', 'rap', 'southern hip hop', 'trap']"
+DO IT AGAIN (feat. 2Rare) - NLE Choppa,"['memphis hip hop', 'rap']"
+Saran Pack - Tay-K,"['cali rap', 'dfw rap', 'rap', 'trap']"
+Walkin - Denzel Curry,"['dark trap', 'drill', 'hip hop', 'miami hip hop', 'pop rap', 'rap', 'trap', 'underground hip hop']"
+Party And Bullshit - The Notorious B.I.G.,[]
+This Side - EARTHGANG,"['atl hip hop', 'hip hop', 'indie hip hop', 'psychedelic hip hop', 'rap', 'underground hip hop']"
+Rain - JayO Sama,['florida rap']
+New Gold (feat. Tame Impala and Bootie Brown) - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+Little Dark Age - MGMT,"['alternative rock', 'indie rock', 'indietronica', 'modern rock', 'rock']"
+Dawg House - Ray Vaughn,[]
+ATLiens - Outkast,"['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']"
+"So Fresh, So Clean - Outkast","['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']"
+Hey Ya! - Outkast,"['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']"
+Mr. Morale - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Black Friday - The Kendrick,[]
+Swim Good - Frank Ocean,"['lgbtq+ hip hop', 'neo soul']"
+19-2000 - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+3 Below - SAINt JHN,"['melodic rap', 'slap house']"
+The Highs & The Lows - Chance the Rapper,"['chicago rap', 'conscious hip hop', 'hip hop', 'pop rap', 'rap']"
+Roses - Outkast,"['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']"
+Famous - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Kids - MGMT,"['alternative rock', 'indie rock', 'indietronica', 'modern rock', 'rock']"
+Just What I Am - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+Ghost Town - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+True Love - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Biking - Frank Ocean,"['lgbtq+ hip hop', 'neo soul']"
+In My Room - Frank Ocean,"['lgbtq+ hip hop', 'neo soul']"
+Where Is The Love? - Black Eyed Peas,"['dance pop', 'pop', 'pop rap']"
+California Love - Original Version - 2Pac,"['g funk', 'gangster rap', 'hip hop', 'rap', 'west coast rap']"
+N95 - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Silent Hill - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Paul Chomedey de Mainsoneuve - Young Ratoo,[]
+Jealous - YG,"['cali rap', 'hip hop', 'pop rap', 'rap', 'southern hip hop', 'trap']"
+Nikes On My Feet - Mac Miller,"['hip hop', 'pittsburgh rap', 'pop rap', 'rap']"
+Could You Be Loved - Bob Marley & The Wailers,"['reggae', 'roots reggae']"
+Rainbow in the Sky - Ziggy Marley,"['reggae', 'roots reggae']"
+Embrace the Martian - Crookers,['fidget house']
+Retro (Rough) - Childish Gambino,"['atl hip hop', 'hip hop', 'rap']"
+IV. Sweatpants - Childish Gambino,"['atl hip hop', 'hip hop', 'rap']"
+3005 - Childish Gambino,"['atl hip hop', 'hip hop', 'rap']"
+Redbone - Childish Gambino,"['atl hip hop', 'hip hop', 'rap']"
+Paper Planes - M.I.A.,"['escape room', 'indietronica', 'new rave']"
+Symphonies - Bonus Track - Dan Black,['uk alternative pop']
+Let Me Out (feat. Mavis Staples & Pusha T) - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+By Design - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+The Less I Know The Better - Tame Impala,"['australian psych', 'modern rock', 'neo-psychedelic', 'rock']"
+Empire Ants (feat. Little Dragon) - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+She's My Collar (feat. Kali Uchis) - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+If I Ruled the World (Imagine That) (feat. Lauryn Hill) - Nas,"['conscious hip hop', 'east coast hip hop', 'gangster rap', 'hardcore hip hop', 'hip hop', 'queens hip hop', 'rap']"
+Wat U Sed (feat. Doechii & Kal Banx) - Isaiah Rashad,"['hip hop', 'rap', 'tennessee hip hop', 'underground hip hop']"
+UOENO - Black Hippy,['underground hip hop']
+Hard Work Pays Off - Future,"['atl hip hop', 'hip hop', 'rap', 'southern hip hop', 'trap']"
+Scott Mescudi Vs. The World - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+Baptized In Fire - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+That Tree - Snoop Dogg,"['g funk', 'gangster rap', 'hip hop', 'pop rap', 'rap', 'west coast rap']"
+Leader Of The Delinquents - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+Ride - Aaron May,[]
+Self Care - Mac Miller,"['hip hop', 'pittsburgh rap', 'pop rap', 'rap']"
+"I'm Good Luv, Enjoy. - Aaron May",[]
+Father Stretch My Hands Pt. 1 - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Needs - Kota the Friend,['underground hip hop']
+ORANGE SODA - Baby Keem,"['hip hop', 'rap']"
+A.D.H.D - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Had Enough (feat. Quavo & Offset) - Don Toliver,"['pop rap', 'rap', 'trap']"
+Off The Grid - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Waves - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Jimmy Jimmy (feat. AJ Tracey) - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+Fountains (with Tems) - Drake,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']"
+Ms. Jackson - Outkast,"['atl hip hop', 'dirty south rap', 'hip hop', 'old school atlanta hip hop', 'rap', 'southern hip hop']"
+Fair Trade (with Travis Scott) - Drake,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']"
+The Recipe (Black Hippy Remix) - Bonus Track - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Money Trees - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Mr. Rager - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+No Guns Allowed (feat. Drake & Cori B.) - Snoop Lion,['reggae fusion']
+Heart of a Giant (with Rod Wave) - Polo G,"['chicago rap', 'rap']"
+Poetic Justice - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+All Falls Down - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Rhinestone Eyes - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+The Way Life Goes (feat. Oh Wonder) - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+Erase Me - Main - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+3 Headed Snake (feat. Young Thug) - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+3 Headed Goat (feat. Lil Baby & Polo G) - Lil Durk,"['chicago drill', 'chicago rap', 'drill', 'hip hop', 'rap', 'trap']"
+Now Or Never - Bonus Track - Kendrick Lamar,"['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Violent Crimes - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Leave Me Alone - Pouya,"['aesthetic rap', 'cloud rap', 'dark trap', 'miami hip hop', 'underground hip hop']"
+Solid (feat. Drake) - Young Stoner Life,['pop rap']
+Weekend (feat. Miguel) - Mac Miller,"['hip hop', 'pittsburgh rap', 'pop rap', 'rap']"
+Wish - Diplo,"['dance pop', 'edm', 'electro house', 'moombahton', 'pop dance']"
+Soundtrack 2 My Life - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+"Bitch, Don’t Kill My Vibe - Kendrick Lamar","['conscious hip hop', 'hip hop', 'rap', 'west coast rap']"
+Casper - Takeoff,"['atl hip hop', 'rap', 'trap']"
+Knock Knock - Mac Miller,"['hip hop', 'pittsburgh rap', 'pop rap', 'rap']"
+Sad People - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+Big Poppa - 2007 Remaster - The Notorious B.I.G.,"['east coast hip hop', 'gangster rap', 'hardcore hip hop', 'hip hop', 'rap']"
+Locked Up - Akon,['dance pop']
+Ridin (feat. Landon Cube & YBN Nahmir) - Yung Bans,"['cloud rap', 'plugg', 'trap', 'underground hip hop']"
+way back - Travis Scott,"['hip hop', 'rap', 'slap house']"
+"Medication (ft. Stephen Marley, Wiz Khalifa, Ty Dolla $ign) - Remix - Damian Marley","['reggae', 'reggae fusion']"
+Brand New Draco - 21 Savage,"['atl hip hop', 'hip hop', 'rap']"
+Yah Mean - Playboi Carti,"['atl hip hop', 'plugg', 'pluggnb', 'rage rap', 'rap']"
+ONE WATCH (feat. Young Thug) - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+When I Call - JayO Sama,['florida rap']
+Narrow Road (feat. Lil Baby) - NLE Choppa,"['memphis hip hop', 'rap']"
+Eye Open - JayO Sama,['florida rap']
+Mood Swings (feat. Lil Tjay) - Pop Smoke,"['brooklyn drill', 'rap']"
+infinity (888) - XXXTENTACION,"['emo rap', 'miami hip hop', 'rap']"
+Bound 2 - Kanye West,"['chicago rap', 'hip hop', 'rap']"
+Martin & Gina - Polo G,"['chicago rap', 'rap']"
+I Know - Polo G,"['chicago rap', 'rap']"
+Heartless (feat. Mustard) - Polo G,"['chicago rap', 'rap']"
+21 - Polo G,"['chicago rap', 'rap']"
+Stay High - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+I Want It - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+"Guwop (feat. Quavo, Offset and Young Scooter) - Young Thug","['atl hip hop', 'atl trap', 'gangster rap', 'melodic rap', 'rap', 'trap']"
+DARE - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+VULTURES CRY 2 (feat. WizDaWizard and Mike Smiff) - Kodak Black,"['florida drill', 'florida rap', 'melodic rap', 'miami hip hop', 'rap', 'trap', 'trap latino']"
+Kitchen - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+a lot - 21 Savage,"['atl hip hop', 'hip hop', 'rap']"
+Pursuit Of Happiness (Nightmare) - Kid Cudi,"['hip hop', 'ohio hip hop', 'pop rap', 'rap']"
+DOLLAZ ON MY HEAD (feat. Young Thug) - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+ARGENTINA - Gunna,"['atl hip hop', 'melodic rap', 'rap', 'trap']"
+"If I'm Lyin', I'm Flyin' - Kodak Black","['florida drill', 'florida rap', 'melodic rap', 'miami hip hop', 'rap', 'trap', 'trap latino']"
+On Melancholy Hill - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+You Sleep - JayO Sama,['florida rap']
+Hide (feat. Seezyn) - Juice WRLD,[]
+What It Is - JayO Sama,['florida rap']
+Florida Boy - JayO Sama,['florida rap']
+Feel Good Inc. - Gorillaz,"['alternative hip hop', 'modern rock', 'rock']"
+Maze - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+SAD! - XXXTENTACION,"['emo rap', 'miami hip hop', 'rap']"
+HIGHEST IN THE ROOM - Travis Scott,"['hip hop', 'rap', 'slap house']"
+Fast - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+Empty - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+Robbery - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+Venetia - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+Nice For What - Drake,"['canadian hip hop', 'canadian pop', 'hip hop', 'pop rap', 'rap']"
+Self Control - YoungBoy Never Broke Again,"['baton rouge rap', 'rap']"
+We da Mob - JayO Sama,['florida rap']
+Who is U - Lil Gnar,"['atl hip hop', 'melodic rap']"
+Life Is Good (feat. Drake) - Future,"['atl hip hop', 'hip hop', 'rap', 'southern hip hop', 'trap']"
+Ric Flair Drip (with Metro Boomin) - Offset,"['atl hip hop', 'hip hop', 'rap']"
+Hear Me Calling - Juice WRLD,"['chicago rap', 'melodic rap', 'rap']"
+Fuck Love - XXXTENTACION,"['emo rap', 'miami hip hop', 'rap']"
+Love Scars 3 - Trippie Redd,"['melodic rap', 'rap', 'trap']"
+You Was Right - Lil Uzi Vert,"['hip hop', 'melodic rap', 'philly rap', 'rage rap', 'rap']"
+Taking A Walk - Trippie Redd,"['melodic rap', 'rap', 'trap']"
+Topanga - Trippie Redd,"['melodic rap', 'rap', 'trap']"
+TECHNO + TEQUILA (feat. Morgan Harvill) - Disco Lines,['stutter house']
+Menace II Society - Mall Grab,"['aussietronica', 'australian house', 'lo-fi house']"
+leavemealone - Fred again..,"['edm', 'house', 'stutter house']"
+Distance - Volac Remix - Apashe,['bass trap']
+Don't Hurt Me - Cache,[]
+I'm Fine - IMANU Remix - Apashe,['bass trap']
+Could Heaven Ever Be Like This - Walker & Royce and Chris Lorenzo Remix - Idris Muhammad,"['jazz funk', 'new orleans funk', 'soul jazz']"
+Summer 99 - Tchami,"['deep groove house', 'edm', 'electro house', 'future house', 'house', 'pop dance', 'progressive house']"
+Praise - Tchami,"['deep groove house', 'edm', 'electro house', 'future house', 'house', 'pop dance', 'progressive house']"
+Only You - STANY & Tchami Remix - STANY,[]
+Everything - Mall Grab,"['aussietronica', 'australian house', 'lo-fi house']"
+Say Nothing - Mall Grab,"['aussietronica', 'australian house', 'lo-fi house']"
+Stardust Circuit - Starjunk 95,[]
+"World, Hold On - FISHER Rework - Bob Sinclar","['disco house', 'filter house']"
+Push Up - Original Mix - Creeds,[]
+Groove District - Starjunk 95,[]
+Get Shaky - KXXMA,['nu gabber']
+CHASE THE SUN - TurboKevin,[]
+Dreaming - Gibson Parker Remix - Rootkit,"['chillstep', 'complextro', 'electro house', 'gaming edm', 'melodic dubstep']"
+All The Things She Said - Cody Wong,[]
+Out The Fire (At The Hotel) - Radio Edit - Franky Rizardo,"['circuit', 'dutch tech house', 'house']"
+Afraid To Feel - LF SYSTEM,['uk dance']
+Googoo Lagoon - DR. GABBA,[]
+Cry In My Arms - southstar,['pop dance']
+OBLIVIOUS - Mild Minds,['australian dance']
+Glue - Bicep,"['ambient house', 'electronica']"
+We Are The People - southstar Remix - Empire of the Sun,"['australian dance', 'australian electropop', 'dance rock', 'indietronica', 'neo-synthpop']"
+Rainfall (Praise You) - Tom Santa,['stutter house']
+Maneater - JKRS,[]
+Night Drive - Wilee,"['anime phonk', 'chill phonk']"
+Bayside - Radio Edit - Obskür,['irish electronic']
+DESTINATIONS - Mild Minds,['australian dance']
+Coming Home - A-Trak,"['canadian electronic', 'edm', 'electro house', 'electronic trap', 'fidget house', 'turntablism']"
+Crystals - Isolate.exe,[]
+FORMATIONS - Mild Minds,['australian dance']
+Yes To Heaven (Techno) - Way 2 Hard,['techno remix']
+Patience - Mall Grab,"['aussietronica', 'australian house', 'lo-fi house']"
+Necrotic - FEAR MANE,[]
+Never Let Go (Of Me) - Baltra,['lo-fi house']
+Losing It - FISHER,"['australian house', 'house']"
+Derezzed - Daft Punk,"['electro', 'filter house', 'rock']"
+Peanut Butter Jelly - Galantis,"['dance pop', 'edm', 'pop', 'pop dance']"
+California Dreamin' (feat. High Jinx) - Chris Lorenzo,"['bass house', 'house', 'tech house']"
+You Little Beauty - FISHER,"['australian house', 'house']"
+Plasma - DR. GABBA,[]
+The Weekend - Original 12 Inch Mix - Michael Gray,"['disco house', 'vocal house']"
+Push The Feeling On - Mk Dub Revisited Edit - Nightcrawlers,"['disco house', 'hip house', 'vocal house']"
+Music Sounds Better With You - Radio Edit - Stardust,['filter house']
+One Night in Bangkok - Vinylshakerz XXL Mix - Vinylshakerz,['hands up']
+Make Luv (Radio Version) - Room 5,"['disco house', 'vocal house']"
+Sunflower - Mall Grab,"['aussietronica', 'australian house', 'lo-fi house']"
+1992 - No_4mat,[]
 Marea (we’ve lost dancing) - Fred again..,"['edm', 'house', 'stutter house']"
 1942 Flows - Meek Mill,"['hip hop', 'philly rap', 'pop rap', 'rap', 'southern hip hop', 'trap']"
 Homecoming - Kanye West,"['chicago rap', 'hip hop', 'rap']"
