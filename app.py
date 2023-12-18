@@ -9,8 +9,11 @@ import pandas as pd
 import requests
 
 
+"""A Flask app that interacts with the Spotify API to retrieve user's saved tracks and their respective genres.
 
-# App config
+Attributes:
+    app (Flask): The Flask application.
+"""
 app = Flask(__name__)
 
 app.secret_key = 'esfks'
@@ -18,17 +21,18 @@ app.config['SESSION_COOKIE_NAME'] = 'spotify-login-session'
 
 @app.route('/')
 def login():
+    """Redirects the user to Spotify's authorization page for login."""
+    
     sp_oauth = create_spotify_oauth()
     auth_url = sp_oauth.get_authorize_url()
     print(auth_url)
     return redirect(auth_url)
 
-@app.route('/redirect')
-def redirectPage():
-    return 'redirect'
+
 
 @app.route('/authorize')
 def authorizePage():
+    """Authorizes the user via Spotify OAuth and stores token information in the session."""
     sp_oauth = create_spotify_oauth()
     session.clear()
     code = request.args.get('code')
@@ -38,6 +42,7 @@ def authorizePage():
 
 @app.route('/logout')
 def logout():
+    """Logs the user out by clearing the session."""
     for key in list(session.keys()):
         session.pop(key)
     return redirect('/')
@@ -45,6 +50,7 @@ def logout():
 
 @app.route('/getTracks')
 def get_all_tracks():
+    """Retrieves all of the user's saved tracks along with their respective genres and saves them to a CSV file."""
     session['token_info'], authorized = get_token()
     session.modified = True
     if not authorized:
@@ -76,8 +82,13 @@ def get_all_tracks():
     return "done"
 
 
-# Checks to see if token is valid and gets a new token if not
+
 def get_token():
+    """Checks if the token is valid and refreshes it if expired.
+
+    Returns:
+        tuple: A tuple containing the token information and a boolean indicating if the token is valid.
+    """
     token_valid = False
     token_info = session.get("token_info", {})
 
@@ -100,6 +111,12 @@ def get_token():
 
 
 def create_spotify_oauth():
+    """Creates an instance of SpotifyOAuth for handling Spotify authorization.
+
+    Returns:
+        SpotifyOAuth: An instance of SpotifyOAuth.
+    """
+
     return SpotifyOAuth(
             client_id="56d658f130c3412884d595d59ac0095d",
             client_secret="948fedf1fc4f4c1aa9d8847df9fcc641",
