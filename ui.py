@@ -6,6 +6,8 @@ import sys
 class SpotifyDownloaderApp:
     """
     GUI Application for downloading
+    Driver: Javaughn
+    Navigator: Tommy
     Class creates a windows with buttons
 
     Attributes:
@@ -14,6 +16,8 @@ class SpotifyDownloaderApp:
     def __init__(self, master):
         """
         Initialize application with a main window
+        Driver: Beka
+        Navigator: Tommy
 
         Attributes: 
             master(tk): The main window of the application
@@ -34,6 +38,8 @@ class SpotifyDownloaderApp:
     def run_app_py(self):
         """
         Run the app.py file - Spotify login
+        Driver: Mitch
+        Navigator: Beka
 
         Handles and prints errors
         """
@@ -47,6 +53,8 @@ class SpotifyDownloaderApp:
     def run_logic_py(self):
         """
         Run the logic.py file - Generates Playlist
+        Driver: Beka
+        Navigator Tommy
 
         Prints any errors that occur
         """
@@ -60,6 +68,8 @@ class SpotifyDownloaderApp:
     def create_button(self, parent, image_file, command, title):
         """
         Create a button with an image and text
+        Driver: Javaughn
+        Navigator: Tommy
 
         Returns:
             tk.Button - the created button widget
