@@ -4,7 +4,20 @@ import subprocess
 import sys
 
 class SpotifyDownloaderApp:
+    """
+    GUI Application for downloading
+    Class creates a windows with buttons
+
+    Attributes:
+        master(tk): The main window of the application
+    """
     def __init__(self, master):
+        """
+        Initialize application with a main window
+
+        Attributes: 
+            master(tk): The main window of the application
+        """
         self.master = master
         master.title("Spotify Web Downloader")
         master.geometry("300x200")
@@ -19,6 +32,11 @@ class SpotifyDownloaderApp:
         mnotes_icon_button.pack(side=tk.RIGHT, padx=10)
 
     def run_app_py(self):
+        """
+        Run the app.py file - Spotify login
+
+        Handles and prints errors
+        """
         try:
             subprocess.run([sys.executable, "app.py"], check=True)
         except subprocess.CalledProcessError as e:
@@ -27,6 +45,11 @@ class SpotifyDownloaderApp:
             print(f"Unexpected error: {e}")
 
     def run_logic_py(self):
+        """
+        Run the logic.py file - Generates Playlist
+
+        Prints any errors that occur
+        """
         try:
             subprocess.run([sys.executable, "logic.py"], check=True)
         except subprocess.CalledProcessError as e:
@@ -35,6 +58,12 @@ class SpotifyDownloaderApp:
             print(f"Unexpected error: {e}")
 
     def create_button(self, parent, image_file, command, title):
+        """
+        Create a button with an image and text
+
+        Returns:
+            tk.Button - the created button widget
+        """
         image = Image.open(image_file)
         photo = ImageTk.PhotoImage(image)
         button = tk.Button(parent, image=photo, command=command, compound=tk.TOP)
@@ -44,6 +73,11 @@ class SpotifyDownloaderApp:
         return button
 
 def main():
+    """
+    Main function to start the application
+
+    Creates the main application window
+    """
     root = tk.Tk()
     app = SpotifyDownloaderApp(root)
     root.mainloop()
