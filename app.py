@@ -21,7 +21,10 @@ app.config['SESSION_COOKIE_NAME'] = 'spotify-login-session'
 
 @app.route('/')
 def login():
-    """Redirects the user to Spotify's authorization page for login."""
+    """Redirects the user to Spotify's authorization page for login.
+        Driver: Tommy
+        Navigator: Javaughn
+    """
     
     sp_oauth = create_spotify_oauth()
     auth_url = sp_oauth.get_authorize_url()
@@ -32,7 +35,10 @@ def login():
 
 @app.route('/authorize')
 def authorizePage():
-    """Authorizes the user via Spotify OAuth and stores token information in the session."""
+    """Authorizes the user via Spotify OAuth and stores token information in the session.
+        Driver: Tommy
+        Navigator: Beka
+    """
     sp_oauth = create_spotify_oauth()
     session.clear()
     code = request.args.get('code')
@@ -42,7 +48,10 @@ def authorizePage():
 
 @app.route('/logout')
 def logout():
-    """Logs the user out by clearing the session."""
+    """Logs the user out by clearing the session.
+        Driver: Tommy
+        Navigator: Javaughn
+    """
     for key in list(session.keys()):
         session.pop(key)
     return redirect('/')
@@ -50,7 +59,10 @@ def logout():
 
 @app.route('/getTracks')
 def get_all_tracks():
-    """Retrieves all of the user's saved tracks along with their respective genres and saves them to a CSV file."""
+    """Retrieves all of the user's saved tracks along with their respective genres and saves them to a CSV file.
+        Driver: Tommy
+        Navigator: Beka
+    """
     session['token_info'], authorized = get_token()
     session.modified = True
     if not authorized:
@@ -88,6 +100,9 @@ def get_token():
 
     Returns:
         tuple: A tuple containing the token information and a boolean indicating if the token is valid.
+
+    Driver: Tommy
+    Navigator: Javaughn
     """
     token_valid = False
     token_info = session.get("token_info", {})
@@ -115,6 +130,9 @@ def create_spotify_oauth():
 
     Returns:
         SpotifyOAuth: An instance of SpotifyOAuth.
+
+    Driver: Tommy
+    Navigator: Beka
     """
 
     return SpotifyOAuth(
