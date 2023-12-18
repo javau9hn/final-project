@@ -2,6 +2,8 @@ import tkinter as tk
 from PIL import Image, ImageTk
 import subprocess
 import sys
+from PIL import Image
+import os
 
 def run_app_py():
     try:
@@ -29,6 +31,7 @@ def create_button(parent, image_file, command):
 def main():
     root = tk.Tk()
     root.title("Spotify Web Downloader")
+    root.geometry("800x500")
 
     frame = tk.Frame(root)
     frame.pack(padx=20, pady=20)
